@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="TaskPaneApp">
+
   <Id>12345678-1111-2222-3333-123456789000</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>Soham</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
+
   <DisplayName DefaultValue="Excel Dictation"/>
-  <Description DefaultValue="Speech to Text Add-in"/>
+  <Description DefaultValue="Dictation add-in with popup mic support"/>
+
+  <!-- IMPORTANT: allow popup/dialog to open from GitHub Pages -->
+  <AppDomains>
+    <AppDomain>https://soham1455.github.io</AppDomain>
+  </AppDomains>
+
   <Hosts>
     <Host Name="Workbook"/>
   </Hosts>
+
   <DefaultSettings>
     <SourceLocation DefaultValue="https://soham1455.github.io/excel-dictation/index.html"/>
   </DefaultSettings>
+
   <Permissions>ReadWriteDocument</Permissions>
+
 </OfficeApp>
+
+
