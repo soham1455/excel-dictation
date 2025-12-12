@@ -3,27 +3,28 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:type="TaskPaneApp">
 
-  <Id>00000000-0000-0000-0000-000000000001</Id>
+  <Id>00000000-0000-0000-0000-000000000123</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>Soham</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
 
-  <DisplayName DefaultValue="Excel Dictation"/>
-  <Description DefaultValue="Speak and insert text into Excel cells."/>
+  <DisplayName DefaultValue="Excel Dictation (Local)"/>
+  <Description DefaultValue="Local development version of Excel Dictation Add-in."/>
 
   <Hosts>
     <Host Name="Workbook"/>
   </Hosts>
 
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://soham1455.github.io/excel-dictation/index.html"/>
+    <!-- IMPORTANT: Your local development server URL -->
+    <SourceLocation DefaultValue="http://127.0.0.1:8080/index.html"/>
   </DefaultSettings>
 
   <Permissions>ReadWriteDocument</Permissions>
 
+  <!-- REQUIRED FOR LOCALHOST (AppDomain must match exactly) -->
   <AppDomains>
-    <AppDomain>https://soham1455.github.io</AppDomain>
-    <AppDomain>https://*.github.io</AppDomain>
+    <AppDomain>http://127.0.0.1:8080</AppDomain>
   </AppDomains>
 
 </OfficeApp>
