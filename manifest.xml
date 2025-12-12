@@ -12,7 +12,8 @@
     <Host Name="Workbook"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://CHANGE_THIS_TO_YOUR_HOST/index.html"/>
+    <SourceLocation DefaultValue="https://github.com/soham1455/excel-dictation/index.html"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
 </OfficeApp>
+
