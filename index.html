@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Excel Dictation</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <script src="app.js"></script>
+    <style>
+      body { font-family: "Segoe UI", sans-serif; padding: 12px; max-width: 480px; }
+      button { margin: 6px 6px 6px 0; padding: 8px 12px; border-radius: 6px; }
+      #status { margin-top: 8px; font-size: 0.95rem; color: #333; }
+      #history { margin-top:10px; font-size:0.9rem; max-height:120px; overflow:auto; border:1px solid #eee; padding:6px; }
+    </style>
+  </head>
+  <body>
+    <h3>Excel Dictation</h3>
+    <div>
+      <button id="startBtn">Start Dictation</button>
+      <button id="stopBtn" disabled>Stop</button>
+      <select id="langSel" aria-label="Language">
+        <option value="en-US">English (US)</option>
+        <option value="en-GB">English (UK)</option>
+        <option value="hi-IN">Hindi (India)</option>
+      </select>
+    </div>
+    <div id="status">Status: idle</div>
+    <div id="history"></div>
+  </body>
+</html>
