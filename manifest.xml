@@ -16,13 +16,11 @@
   </Hosts>
 
   <DefaultSettings>
-    <!-- IMPORTANT: your GitHub Pages host -->
     <SourceLocation DefaultValue="https://soham1455.github.io/excel-dictation/index.html"/>
   </DefaultSettings>
 
   <Permissions>ReadWriteDocument</Permissions>
 
-  <!-- CRITICAL FIX: allow GitHub Pages dialog.html & JS -->
   <AppDomains>
     <AppDomain>https://soham1455.github.io</AppDomain>
     <AppDomain>https://*.github.io</AppDomain>
